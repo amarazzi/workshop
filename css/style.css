@@ -294,7 +294,9 @@ footer .contenedor div h3{
 	border-radius: 50%;
 	background: #2B3E4F;
 	display: none;
-	 
+	text-align: center;
+	padding-top: 10px;
+	box-sizing: border-box;
 }
 
 @media screen and (max-width: 815px){
@@ -349,6 +351,7 @@ footer .contenedor div h3{
 		position: fixed;
 		right:10px;
 		top: 675px;
+		z-index: 1;
 	}
 
 }
