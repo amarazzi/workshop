@@ -1,20 +1,26 @@
-/*********************** after and before
-
-
-los elementos que no tienen etiqueta que cierra no tienen
-el after and before
-
-**********************/
-
-div,article,section,.container,nav,header,footer{
+/*div,article,section,.container,nav,header,footer{
 	border:1px solid cyan;
+}*/
+
+.estrella1 {
+	background: #00BD9D;
+	color:#fff;
 }
 
-.estrella {
+.estrella2 {
 	background: #fff;
 }
+.estrella1:after, .estrella1:before {
+	content:"";
+	width: 100px;
+	height: 4px;
+	background: #fff;
+	display: inline-block;
+	position: relative;
+	top:8px;
+}
 
-.estrella:after, .estrella:before {
+.estrella2:after, .estrella2:before {
 	content:"";
 	width: 100px;
 	height: 4px;
@@ -28,6 +34,22 @@ div,article,section,.container,nav,header,footer{
 	display: flex;
 	justify-content: center;
 }
+
+.contenedor .name span{
+	display: flex;
+	justify-content: center;
+}
+
+.about .contenedor span{
+	display: flex;
+	justify-content: center;
+}
+
+.contacto .contenedor span{
+	display: flex;
+	justify-content: center;	
+	margin-bottom: 2%;
+} 
 
 .contenedor {
 	max-width: 1000px;
@@ -115,6 +137,7 @@ h2 {
 	color:#2B3E4F;
 }
 
+
 .portfolio_uno {
 	padding-top: 80px;	
 	padding-bottom: 80px;
@@ -125,6 +148,7 @@ h2 {
 	padding-top: 80px;	
 	padding-bottom: 80px;
 	color:#fff;
+	margin-bottom: 5%;
 }
 
 article p {
@@ -138,6 +162,7 @@ article {
 	padding-top: 80px;
 	padding-bottom: 80px;
 }
+
 
 input {
 	font-family: "Open sans", sans-serif;
@@ -252,7 +277,7 @@ footer .contenedor div h3{
 	padding-top: 40px;
 }
 
-/* Sweep To Top */
+/* Sweep To Top *//*transicion de imagen (efecto)*/
 
 .hvr-sweep-to-top {
   display: inline-block;
